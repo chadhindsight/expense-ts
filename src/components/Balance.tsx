@@ -1,9 +1,9 @@
 
 const Balance = () => {
     return (
-        <div>
+        <>
 
-        </div>
+        </>
     );
 };
 
