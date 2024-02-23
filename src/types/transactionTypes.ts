@@ -8,7 +8,7 @@ export interface Transaction {
     id: number;
 }
 
-// transaction list []:
+// list of transactions
 export type TransactionList = Transaction[] | [];
 
 export type TransactionAction =
