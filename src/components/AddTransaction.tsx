@@ -13,7 +13,8 @@ export const AddTransaction = () => {
             type: 'ADD_TRANSACTION',
             payload: transaction
         });
-        console.log("amount:", amount)
+
+        console.log("transaction:", transaction)
     }
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
