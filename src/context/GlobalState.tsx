@@ -19,7 +19,7 @@ export const useAppContext = () => {
 }
 
 // Provider setup
-interface AppProviderProps {
+type AppProviderProps = {
     children: ReactNode;
 }
 

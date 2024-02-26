@@ -10,6 +10,8 @@ export const appReducer = (state: TransactionList, action: TransactionAction) =>
             return state.filter((item) => item.id !== action.payload);
         case 'ADD_TRANSACTION':
             return [...state, action.payload]
+        default:
+            return state;
     }
 };
 
