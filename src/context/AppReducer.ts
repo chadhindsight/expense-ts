@@ -1,3 +1,4 @@
+// Import related types
 import { TransactionAction, TransactionList } from '../types/transactionTypes';
 
 
