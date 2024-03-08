@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { useAppContext } from "../context/GlobalState";
-import { Transaction } from "../types/transactionTypes";
+import { TransactionType } from "../types/transactionTypes";
 
 export const AddTransaction = () => {
     const [text, setText] = useState('');
@@ -8,7 +8,7 @@ export const AddTransaction = () => {
 
     const { dispatch } = useAppContext();
 
-    function addTransaction(transaction: Transaction) {
+    function addTransaction(transaction: TransactionType) {
         dispatch({
             type: 'ADD_TRANSACTION',
             payload: transaction

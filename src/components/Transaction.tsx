@@ -1,7 +1,8 @@
 import { useAppContext } from "../context/GlobalState";
+import { TransactionType } from "../types/transactionTypes";
 import { moneyFormatter } from "../utils/moneyFormatter";
 
-const Transaction = ({ transaction }) => {
+const TransactionComp = ({ transaction }: { transaction: TransactionType }) => {
 
     const sign = transaction.amount < 0 ? '-' : '+';
     const { dispatch } = useAppContext();
@@ -21,4 +22,4 @@ const Transaction = ({ transaction }) => {
     );
 };
 
-export default Transaction;
+export default TransactionComp;
