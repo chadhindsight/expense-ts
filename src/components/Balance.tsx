@@ -7,7 +7,8 @@ const Balance = () => {
 
     const amounts = listOfTransactions.map(transaction => transaction.amount)
     const total = amounts.reduce((acc, item) => (acc += item), 0);
-    console.log(listOfTransactions)
+
+    console.log(typeof total, total)
 
     return (
         <>
