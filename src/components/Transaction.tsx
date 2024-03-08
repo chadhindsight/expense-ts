@@ -1,12 +1,12 @@
-import { useContext } from "react";
-import { AppContext, useAppContext } from "../context/GlobalState";
+import { useAppContext } from "../context/GlobalState";
+import { moneyFormatter } from "../utils/moneyFormatter";
 
 const Transaction = ({ transaction }) => {
-    const { listOfTransactions } = useContext(AppContext);
+
     const sign = transaction.amount < 0 ? '-' : '+';
     const { dispatch } = useAppContext();
 
-    function deleteTransaction(id) {
+    function deleteTransaction(id: number) {
         dispatch({
             type: 'DELETE_TRANSACTION',
             payload: id
@@ -14,9 +14,10 @@ const Transaction = ({ transaction }) => {
     }
 
     return (
-        <>
+        <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
+            {transaction.text} <span>{sign}{moneyFormatter(transaction.amount)}</span><button onClick={() => deleteTransaction(transaction.id)} className="delete-btn">x</button>
+        </li>
 
-        </>
     );
 };
 
