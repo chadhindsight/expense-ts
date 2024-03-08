@@ -5,6 +5,7 @@ import { AppProvider } from './context/GlobalState.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    {/* App component needs to be wrapped by the AppProvider in order to have access to global state*/}
     <AppProvider>
       <App />
     </AppProvider>
