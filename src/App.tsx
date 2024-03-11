@@ -2,6 +2,7 @@
 import './App.css'
 import { AddTransaction } from './components/AddTransaction'
 import Balance from './components/Balance'
+import { IncomeExpenses } from './components/IncomeExpenses'
 import { TransactionList } from './components/TransactionList'
 import { Header } from './components/presentational/Header'
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <Balance />
+      <IncomeExpenses />
       <TransactionList />
       <AddTransaction />
     </>
