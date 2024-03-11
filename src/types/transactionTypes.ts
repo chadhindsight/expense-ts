@@ -1,4 +1,4 @@
-import { Dispatch } from "react";
+import { Dispatch, ReactNode } from "react";
 
 // single transaction
 export interface TransactionType {
@@ -18,4 +18,9 @@ export type TransactionAction =
 export interface AppContextProps {
     listOfTransactions: TransactionList;
     dispatch: Dispatch<TransactionAction>;
+}
+
+// Provider setup
+export type AppProviderProps = {
+    children: ReactNode;
 }
