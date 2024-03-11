@@ -1,5 +1,4 @@
 export function moneyFormatter(num: number) {
-    console.log('dsfdsf', num)
     const val = num.toFixed(2).split(".");
 
     return (
