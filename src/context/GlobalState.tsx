@@ -1,6 +1,6 @@
-import { createContext, useContext, ReactNode, useReducer } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 import { appReducer } from "./AppReducer";
-import { AppContextProps } from '../types/transactionTypes';
+import { AppContextProps, AppProviderProps } from '../types/transactionTypes';
 
 
 const defaultContextValue: AppContextProps = {
@@ -19,11 +19,6 @@ export const useAppContext = () => {
 }
 
 // Provider setup
-type AppProviderProps = {
-    children: ReactNode;
-}
-
-
 export const AppProvider = ({ children }: AppProviderProps) => {
     const [listOfTransactions, dispatch] = useReducer(appReducer, []);
 
