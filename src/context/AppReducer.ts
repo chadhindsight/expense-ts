@@ -1,8 +1,8 @@
 // Import related types
-import { TransactionAction, TransactionList } from '../types/transactionTypes';
+import { TransactionAction, TransactionInterfaceList } from '../types/transactionTypes';
 
 
-export const appReducer = (state: TransactionList, action: TransactionAction) => {
+export const appReducer = (state: TransactionInterfaceList, action: TransactionAction) => {
     switch (action.type) {
         case 'SET_TRANSACTION':
             return action.payload;
