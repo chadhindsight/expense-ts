@@ -32,6 +32,10 @@ This frontend project gives users the ability to track their income and expenses
 
   Open Source usage
 
+
+https://github.com/chadhindsight/expense-ts/assets/16522246/4f2002e9-c86f-47dc-a317-7bb2781d2a6a
+
+
   ## License
 
 This project is licensed under the MIT license.
