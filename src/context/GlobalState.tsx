@@ -2,7 +2,7 @@ import { createContext, useContext, useReducer } from 'react';
 import { appReducer } from "./AppReducer";
 import { AppContextProps, AppProviderProps } from '../types/transactionTypes';
 
-
+// specify the shape the data related to defaultContextValue should be
 const defaultContextValue: AppContextProps = {
     listOfTransactions: [],
     dispatch: () => { },
