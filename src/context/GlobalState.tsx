@@ -8,7 +8,7 @@ const defaultContextValue: AppContextProps = {
     dispatch: () => { },
 };
 
-export const AppContext = createContext<AppContextProps>(defaultContextValue);
+export const AppContext = createContext(defaultContextValue);
 
 export const useAppContext = () => {
     const establishedContext = useContext(AppContext);

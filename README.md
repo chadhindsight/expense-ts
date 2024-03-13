@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# expense-tracker-typescript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This frontend project gives users the ability to track their income and expenses.
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Installation](#installation)
 
-- Configure the top-level `parserOptions` property like this:
+- [Usage](#usage)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [License](#license)
+
+  - [Contributing](#contributing)
+
+  - [Tests](#tests)
+
+  - [Questions](#questions)
+
+  ## Installation
+
+  To install necessary dependencies, run the following command:
+
+  ```
+  npm i
+  ```
+
+  ## Usage
+
+  Open Source usage
+
+
+https://github.com/chadhindsight/expense-ts/assets/16522246/4761cdc1-148f-4c36-b26c-22deb6ed571e
+
+
+
+
+  ## License
+
+This project is licensed under the MIT license.
+
+## Contributing
+
+## Tests
+
+To run tests, run the following command:
+
+```
+npm run test
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at chadrickj8@gmail.com. You can find more of my work at [chadhindsight](https://github.com/chadhindsight/).
