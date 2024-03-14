@@ -18,7 +18,6 @@ export const useAppContext = () => {
     return establishedContext
 }
 
-// Provider setup
 export const AppProvider = ({ children }: AppProviderProps) => {
     const [listOfTransactions, dispatch] = useReducer(appReducer, []);
 
