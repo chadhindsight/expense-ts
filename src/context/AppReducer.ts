@@ -8,7 +8,7 @@ export const appReducer = (state: TransactionInterfaceList, action: TransactionA
             return action.payload;
 
         case 'DELETE_TRANSACTION':
-            return state.filter((item) => item.id !== action.payload);
+            return state.filter((expenseItem) => expenseItem.id !== action.payload);
         case 'ADD_TRANSACTION':
             return [...state, action.payload]
         default:
