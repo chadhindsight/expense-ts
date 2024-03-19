@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import TransactionComp from './Transaction';
+import TransactionComp from './TransactionComp';
 
 import { AppContext } from '../context/GlobalState';
 
