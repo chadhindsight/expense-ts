@@ -15,8 +15,8 @@ const TransactionComp = ({ transaction }: { transaction: TransactionInterface })
     }
 
     return (
-        <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
-            {transaction.text} <span>{sign}{moneyFormatter(transaction.amount)}</span><button onClick={() => deleteTransaction(transaction.id)} className="delete-btn">x</button>
+        <li className={transaction.amount < 0 ? 'minus' : 'plus'} data-testid="transaction">
+            {transaction.text} {sign}{moneyFormatter(transaction.amount)}<button onClick={() => deleteTransaction(transaction.id)} className="delete-btn">x</button>
         </li>
 
     );
